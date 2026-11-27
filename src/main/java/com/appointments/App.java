@@ -1,12 +1,14 @@
 package com.appointments;
 
-public final class App {
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-    private App() {
-        // Prevent instantiation of the application entry point.
-    }
+// Enable automatic configuration and component discovery.
+@SpringBootApplication
+public class App {
 
     public static void main(String[] args) {
-        System.out.println("Appointment Scheduler initialized.");
+        // Start Spring and the embedded HTTP server.
+        SpringApplication.run(App.class, args);
     }
 }
