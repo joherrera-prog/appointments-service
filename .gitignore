@@ -18,3 +18,7 @@ buildNumber.properties
 # IntelliJ IDEA
 .idea/
 *.iml
+
+# Local SQLite database and auxiliary files
+/appointments.db
+/appointments.db-*
